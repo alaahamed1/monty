@@ -34,5 +34,7 @@ int main(int argc, char **argv)
 			pall(&my_stack);
 		}
 	}
-	return (0);
+	fclose(argv[1]);
+	free(my_stack);
+	return (EXIT_SUCCESS);
 }
